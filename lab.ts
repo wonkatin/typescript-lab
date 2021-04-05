@@ -34,7 +34,7 @@ console.log(numberString, typeof numberString)
 let mixedArray: (number | string)[] = [10, '34', 3, '17']
 
 // Todo write a function to convert the mixed array to an array of only numbers
-const stringToNum = (arr: any): any[] => {
+const stringToNum = (arr: any): (number | string)[] => {
   for(let i = 0; i < arr.length; i++) {
     arr[i] = parseInt(arr[i])
   }
